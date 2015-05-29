@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller With Ads-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="GameViewControllerWithAds" customModule="LexNightmare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" userLabel="RootView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="wit-5S-NGw" userLabel="Scene" customClass="SKView" propertyAccessControl="all">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="115-BW-JNo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jAC-3G-CgE">
+                                        <rect key="frame" x="20" y="134" width="335" height="98"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="98" id="GBX-iL-90U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="72"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4W-Gf-pvF">
+                                        <rect key="frame" x="20" y="571" width="335" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="ILZ-h2-b0F"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                        <state key="normal" title="Remove Ads">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapRemoveAds:" destination="LVB-YS-i5n" eventType="touchUpInside" id="n9f-ck-YgU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVx-w0-D8G">
+                                        <rect key="frame" x="107" y="76" width="160" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KJN-pc-qeT"/>
+                                            <constraint firstAttribute="width" constant="160" id="Zu7-mf-nTT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                        <state key="normal" title="Leaderboard">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLeaderboard:" destination="LVB-YS-i5n" eventType="touchUpInside" id="tmf-M9-oRD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRP-pm-9HG">
+                                        <rect key="frame" x="116" y="240" width="143" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gUp-Jd-9cN"/>
+                                            <constraint firstAttribute="width" constant="143" id="yyF-Ok-zLT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                        <state key="normal" title="Share">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapShareButton:" destination="LVB-YS-i5n" eventType="touchUpInside" id="FPC-JP-QgO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWW-Ao-dFF">
+                                        <rect key="frame" x="311" y="8" width="56" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="TzK-hU-nrK"/>
+                                            <constraint firstAttribute="height" constant="50" id="hrR-6b-ujQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="20"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Mute">
+                                            <color key="titleColor" red="0.3383927047252655" green="0.33845636248588562" blue="0.33838871121406555" alpha="0.70000000000000007" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapMuteButton:" destination="LVB-YS-i5n" eventType="touchUpInside" id="HHU-A0-HS1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbN-Je-xbB">
+                                        <rect key="frame" x="0.0" y="307" width="375" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74" id="9Bn-3k-gy5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="42"/>
+                                        <state key="normal" title="Sleep">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restart:" destination="LVB-YS-i5n" eventType="touchUpInside" id="Lsr-GS-lCH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gB-3i-U2m">
+                                        <rect key="frame" x="20" y="523" width="335" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="g8H-1R-DBG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="18"/>
+                                        <state key="normal" title="Restore previous purchase">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restoreCompletedTransactions" destination="LVB-YS-i5n" eventType="touchUpInside" id="i4D-Kh-nay"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.29999999999999999" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="B4W-Gf-pvF" firstAttribute="leading" secondItem="115-BW-JNo" secondAttribute="leading" constant="20" id="0Uj-SF-tAZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="YWW-Ao-dFF" secondAttribute="trailing" constant="8" id="6ba-ri-1nD"/>
+                                    <constraint firstItem="KVx-w0-D8G" firstAttribute="top" secondItem="115-BW-JNo" secondAttribute="top" constant="76" id="8J2-Zg-PBm"/>
+                                    <constraint firstAttribute="trailing" secondItem="jAC-3G-CgE" secondAttribute="trailing" constant="20" id="AzE-Nh-lS4"/>
+                                    <constraint firstItem="cbN-Je-xbB" firstAttribute="leading" secondItem="115-BW-JNo" secondAttribute="leading" id="Cwa-8O-jAB"/>
+                                    <constraint firstAttribute="trailing" secondItem="5gB-3i-U2m" secondAttribute="trailing" constant="20" id="E6N-qE-x2S"/>
+                                    <constraint firstItem="jAC-3G-CgE" firstAttribute="leading" secondItem="115-BW-JNo" secondAttribute="leading" constant="20" id="bh9-KZ-P42"/>
+                                    <constraint firstItem="YWW-Ao-dFF" firstAttribute="top" secondItem="115-BW-JNo" secondAttribute="top" constant="8" id="et2-7n-CWl"/>
+                                    <constraint firstAttribute="centerX" secondItem="eRP-pm-9HG" secondAttribute="centerX" id="fHU-jm-pe4"/>
+                                    <constraint firstAttribute="trailing" secondItem="cbN-Je-xbB" secondAttribute="trailing" id="kUz-Ph-UNq"/>
+                                    <constraint firstItem="B4W-Gf-pvF" firstAttribute="top" secondItem="5gB-3i-U2m" secondAttribute="bottom" constant="8" id="ke8-W8-Woa"/>
+                                    <constraint firstItem="eRP-pm-9HG" firstAttribute="top" secondItem="jAC-3G-CgE" secondAttribute="bottom" constant="8" id="kre-pu-7PK"/>
+                                    <constraint firstItem="jAC-3G-CgE" firstAttribute="top" secondItem="KVx-w0-D8G" secondAttribute="bottom" constant="8" id="oNK-Gg-V3V"/>
+                                    <constraint firstItem="cbN-Je-xbB" firstAttribute="top" secondItem="eRP-pm-9HG" secondAttribute="bottom" constant="17" id="s84-xd-YJY"/>
+                                    <constraint firstAttribute="trailing" secondItem="B4W-Gf-pvF" secondAttribute="trailing" constant="20" id="seU-BO-nhK"/>
+                                    <constraint firstItem="5gB-3i-U2m" firstAttribute="leading" secondItem="115-BW-JNo" secondAttribute="leading" constant="20" id="tCF-Yn-D6h"/>
+                                    <constraint firstAttribute="centerX" secondItem="KVx-w0-D8G" secondAttribute="centerX" id="u8u-js-pXa"/>
+                                    <constraint firstAttribute="bottom" secondItem="B4W-Gf-pvF" secondAttribute="bottom" constant="56" id="v2Z-UG-Whb"/>
+                                </constraints>
+                            </view>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Khh-BV-LMX">
+                                <rect key="frame" x="27" y="617" width="320" height="50"/>
+                                <connections>
+                                    <outlet property="delegate" destination="LVB-YS-i5n" id="b4e-XL-JQM"/>
+                                </connections>
+                            </adBannerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="115-BW-JNo" firstAttribute="top" secondItem="bdc-N1-crn" secondAttribute="top" id="7HW-i5-7Xt"/>
+                            <constraint firstItem="wit-5S-NGw" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leading" id="CgS-bQ-AzT"/>
+                            <constraint firstItem="wit-5S-NGw" firstAttribute="top" secondItem="bdc-N1-crn" secondAttribute="top" id="D72-1H-uny"/>
+                            <constraint firstItem="b3d-qh-BLL" firstAttribute="top" secondItem="wit-5S-NGw" secondAttribute="bottom" id="Ikg-dD-PMY"/>
+                            <constraint firstItem="b3d-qh-BLL" firstAttribute="top" secondItem="Khh-BV-LMX" secondAttribute="bottom" id="Ouv-yi-emt"/>
+                            <constraint firstAttribute="centerX" secondItem="Khh-BV-LMX" secondAttribute="centerX" id="Q5c-hq-LUW"/>
+                            <constraint firstItem="b3d-qh-BLL" firstAttribute="top" secondItem="115-BW-JNo" secondAttribute="bottom" id="fKC-8Y-Tg4"/>
+                            <constraint firstAttribute="trailing" secondItem="wit-5S-NGw" secondAttribute="trailing" id="jWf-Jc-yFb"/>
+                            <constraint firstAttribute="trailing" secondItem="115-BW-JNo" secondAttribute="trailing" id="jv4-iF-KKW"/>
+                            <constraint firstItem="115-BW-JNo" firstAttribute="leading" secondItem="bdc-N1-crn" secondAttribute="leading" id="qlP-DZ-Jet"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="adBanner" destination="Khh-BV-LMX" id="ywn-Ul-oIB"/>
+                        <outlet property="controlPanel" destination="115-BW-JNo" id="0Qd-zR-L2n"/>
+                        <outlet property="leaderboardButton" destination="KVx-w0-D8G" id="BnU-nH-7ci"/>
+                        <outlet property="muteButton" destination="YWW-Ao-dFF" id="UD1-2U-Ryd"/>
+                        <outlet property="removeAdsButton" destination="B4W-Gf-pvF" id="Lhm-b1-t0b"/>
+                        <outlet property="restoreButton" destination="5gB-3i-U2m" id="sJe-Bc-i6t"/>
+                        <outlet property="scoreLabel" destination="jAC-3G-CgE" id="Ovf-OG-Ue4"/>
+                        <outlet property="shareButton" destination="eRP-pm-9HG" id="QJA-0r-bAx"/>
+                        <outlet property="skView" destination="wit-5S-NGw" id="1HH-gF-wbC"/>
+                        <outlet property="sleepButton" destination="cbN-Je-xbB" id="aeX-fW-TuI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="394.5" y="410.5"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

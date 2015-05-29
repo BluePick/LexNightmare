@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  LexNightmare
+
+  Created by Lex Tang on 3/17/15.
+  Copyright (c) 2015 LexTang.com. All rights reserved.
+*/
+
+
+/* Sharing text */
+"I helped Lex fall asleep for %d seconds." = "我帮助 Lex 睡了 %d 秒。";
+
+/* Game Center Leaderboard */
+"Leaderboard" = "排行榜";
+
+/* Mute button title */
+"Mute" = "静音";
+
+/* Restore button title */
+"Restore previous purchase" = "还原已购项目";
+
+/* Remove ads button title */
+"Remove ads" = "移除广告";
+
+/* Share button title */
+"Share" = "分享";
+
+/* Sleep again button */
+"Sleep" = "睡吧";
