@@ -1,7 +1,5 @@
 ## LexNightmare
 
-[<img src="https://cloud.githubusercontent.com/assets/219689/5575342/963e0ee8-9013-11e4-8091-7ece67d64729.png" width="135" height="40" alt="AppStore"/>](https://itunes.apple.com/app/apple-store/id976943265?pt=80185800&ct=GitHub&mt=8)
-
 A boring game built with SpriteKit and Swift. I made this to learn basic SpriteKit and try to investigate the minimum requirments of a game. The portrait was drawn by my co-worker and sound clips were recorded by myself. Please feel free to modify all of them, make some improvements and publish your fork on App Store.
 
 ## License
